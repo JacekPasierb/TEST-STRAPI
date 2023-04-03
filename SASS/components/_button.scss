@@ -1,0 +1,17 @@
+.button {
+    background-color: var(--one-color-logo);
+    border-style: hidden;
+    border-radius: 4px;
+    &__label {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.9;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 00.06em;
+      color: var(--color-text);
+    }
+  }
+
+ 
+

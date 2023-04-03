@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+  
+    /* will-change:background-color, fill; */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        fill: #ffffff;
+        background-color: var(--one-color-logo);
+        cursor: pointer;
+      }
+      &--primary {
+        background-color: #ffffff1a;
+        fill: #ffffff;
+      }
+  }
+}
+
+  
+ 
+ 

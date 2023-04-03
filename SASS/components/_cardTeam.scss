@@ -1,0 +1,64 @@
+.team {
+  &__image-layout {
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+  &__card {
+    background: var(--color-text);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    @media screen and (min-width: $tablet) {
+      margin-top: 0;
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+  &__img {
+    @media screen and (max-width: 479px){
+      width: 100%;
+      
+    }
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      height: 460px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 374px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 260px;
+    }
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 24px;
+    @media screen and (min-width: $laptop) {
+      padding-bottom: 18px;
+    }
+  }
+  &__name {
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 00.03em;
+  }
+  &__profession {
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 00.03em;
+    color: var(--background-color-three);
+    padding-bottom: 16px;
+  }
+}

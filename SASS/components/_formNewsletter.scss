@@ -1,0 +1,71 @@
+.form-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: $laptop) {
+    align-items: flex-start;
+    margin-left: 77px;
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    @media screen and (min-width: $laptop) {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+    }
+  }
+
+  &__input {
+    width: 450px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    outline: 0;
+    padding-left: 16px;
+    margin-right: 12px;
+    display: inline-block;
+
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+    @media screen and (min-width: $laptop) {
+      width: 358px;
+    }
+  }
+  &__button {
+    width: 200px;
+    height: 50px;
+    padding: 10px 13px 10px 42px;
+    display: flex;
+  }
+  &__button__icon {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    margin-left: 24px;
+  }
+}
+
+.come-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    margin-block: 60px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    align-items: flex-start;
+    margin-left: 70px;
+  }
+}

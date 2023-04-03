@@ -1,0 +1,86 @@
+.section__head {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 00.03em;
+  margin-bottom: 30px;
+  @media screen and (min-width: $laptop) {
+    margin-bottom: 50px;
+  }
+}
+.image-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+.container--flex-center {
+  display: flex;
+  align-items: center;
+  position: relative;
+  @media screen and (max-width: 767px) {
+  min-height: 70px;
+
+  }
+}
+.block {
+  display: block;
+}
+.footer__flex {
+  display: flex;
+  flex-direction: column;
+  
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+   justify-content: center;
+   align-items: baseline;
+  }
+  @media screen and (min-width: $laptop) {
+display: flex;
+flex-wrap: nowrap;
+    align-items: baseline;
+    
+  }
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+  @media screen and (min-width: $laptop) {
+    width: 1200px;
+  }
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $laptop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.footer--logo {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: $tablet) {
+ justify-content: center;
+ margin-right: 204px;
+  }
+  @media screen and (min-width: $laptop) {
+    justify-content: flex-start;
+    margin-right:0;
+
+     }
+}
