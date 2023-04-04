@@ -1,3 +1,19 @@
-body {
-  background-color: crimson;
+
+.head {
+  display: flex;
+  flex-direction: column;
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+.navigation {
+  display: flex;
+  justify-content:space-around;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-content: baseline;
+  }
 }
