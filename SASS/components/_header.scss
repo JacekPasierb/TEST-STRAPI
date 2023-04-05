@@ -1,7 +1,18 @@
 header {
   border-bottom: 1px solid #00b4d8;
+  //----
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+main {
+  padding-top: 77px;
 }
 .menu {
+  
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -9,6 +20,9 @@ header {
   &__logo {
     display: flex;
     justify-content: center;
+  }
+  &__background {
+    background-color: white;
   }
 }
 .navigation {
@@ -60,4 +74,10 @@ header {
     background-color: #4bdbfe;
     padding: 10px 41px 10px 41px;
   }
+}
+
+.to {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
