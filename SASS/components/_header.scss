@@ -1,7 +1,11 @@
-
-.head {
+header {
+  border-bottom: 1px solid #00b4d8;
+}
+.menu {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  padding-block: 10px;
   &__logo {
     display: flex;
     justify-content: center;
@@ -9,11 +13,51 @@
 }
 .navigation {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   &__list {
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 12px;
     align-content: baseline;
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  &__link--active {
+    color: #4bdbfe;
+  }
+}
+.background {
+  max-width: 1600px;
+  background-image: url(/images/womanIdea.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.head {
+  padding-block: 118px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__tittle {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.6;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  &__button {
+    border: none;
+    border-radius: 12px;
+    border-style: hidden;
+    // background-color: aqua; 4BDBFE
+    background-color: #4bdbfe;
+    padding: 10px 41px 10px 41px;
   }
 }
