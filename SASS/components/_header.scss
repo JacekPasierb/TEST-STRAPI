@@ -81,6 +81,7 @@ main {
   display: flex;
   justify-content: space-around;
   gap: 15px;
+  flex-wrap: wrap;
 }
 .container {
   padding: 0 15px;
@@ -98,4 +99,22 @@ main {
 }
 .oferty {
   padding-block: 10px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-basis: calc((100% - 45px) / 4);
+  }
+  &_item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &_icon {
+    border: 1px solid black;
+    border-radius: 50%;
+  }
 }
