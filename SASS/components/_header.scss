@@ -135,3 +135,57 @@ main {
   flex-direction: column;
   gap: 15px;
 }
+//---------------------------------
+.kreska {
+  // width: 200px;
+  // height: 200px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  padding: 40px;
+  position: relative;
+}
+.kreska2 {
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  
+}
+.karta {
+  display: flex;
+  gap: 50px;
+}
+.kreska3 {
+  width: 200px;
+  // height: 200px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  position: relative;
+}
+.kreska4 {
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.card {
+  &_icon2 {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+.karta_opcja {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.karta_opcja--title {
+  margin-bottom: 20px;
+}
