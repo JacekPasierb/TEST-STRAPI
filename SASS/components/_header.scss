@@ -47,7 +47,11 @@ main {
 }
 .background {
   max-width: 1600px;
-  background-image: url(/images/womanIdea.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/womanIdea.jpg);
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -68,9 +72,8 @@ main {
     display: flex;
     margin-bottom: 30px;
     position: absolute;
-    top: 40px ;
+    top: 40px;
     left: 40px;
-    z-index: 3;
   }
   &__button {
     border: none;
@@ -81,7 +84,7 @@ main {
     padding: 10px 41px 10px 41px;
 
     position: absolute;
-    top: 174px ;
+    top: 174px;
     left: 40px;
     z-index: 3;
   }
@@ -137,33 +140,70 @@ main {
 }
 //---------------------------------
 .kreska {
-  // width: 200px;
-  // height: 200px;
+  width: 200px;
+  height: 100%;
   border-top: 1px solid black;
   border-left: 1px solid black;
   padding: 40px;
-  position: relative;
+  // position: relative;
+
+  border: 1px solid red;
 }
 .kreska2 {
   width: 100px;
   height: 100px;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  
+  border:1px solid black;
+  // position: absolute;
+  // top: 20px;
+  // left: 20px;
+}
+.karty {
+  justify-content: center;
 }
 .karta {
+  width: 80%;
   display: flex;
   gap: 50px;
+  // border: 1px solid green;
+
+  position: relative;
+ 
+  justify-content: center;
+  margin: auto;
 }
 .kreska3 {
-  width: 200px;
-  // height: 200px;
+  width: 180px;
+  height: 180px;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
-  position: relative;
+ 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  
+}
+.kreska5pi {
+  width: 80%;
+  height: 80%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.kreska3pi {
+  width: 180px;
+  height: 180px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.kreska5 {
+  width: 80%;
+  height: 80%;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
 }
 .kreska4 {
   width: 100px;
@@ -184,8 +224,16 @@ main {
 .karta_opcja {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  margin-block: 20px;
+  border: 1px solid red;
 }
 .karta_opcja--title {
   margin-bottom: 20px;
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+.swiper {
+  width: 80%;
 }
