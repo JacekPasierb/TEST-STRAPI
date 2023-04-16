@@ -50,6 +50,7 @@ main {
   background-image: url(/images/womanIdea.jpg);
   background-size: cover;
   background-position: center center;
+  position: relative;
 }
 .head {
   padding-block: 118px;
@@ -66,6 +67,10 @@ main {
     text-transform: uppercase;
     display: flex;
     margin-bottom: 30px;
+    position: absolute;
+    top: 40px ;
+    left: 40px;
+    z-index: 3;
   }
   &__button {
     border: none;
@@ -74,6 +79,11 @@ main {
     // background-color: aqua; 4BDBFE
     background-color: #4bdbfe;
     padding: 10px 41px 10px 41px;
+
+    position: absolute;
+    top: 174px ;
+    left: 40px;
+    z-index: 3;
   }
 }
 
@@ -105,7 +115,7 @@ main {
   justify-content: center;
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-basis: calc((100% - 45px) / 4);
+    flex-basis: calc((100% - 45px) / 2);
   }
   &_item {
     text-align: center;
@@ -114,7 +124,14 @@ main {
     gap: 10px;
   }
   &_icon {
+    width: 200px;
     border: 1px solid black;
     border-radius: 50%;
+    margin-inline: auto;
   }
+}
+.Zastosowanie_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
