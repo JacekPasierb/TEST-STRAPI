@@ -181,13 +181,20 @@ main {
   bottom: 0;
   right: 0;
 
+
+
   
 }
 .kreska5pi {
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
+  
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+
 }
 .kreska3pi {
   width: 180px;
@@ -225,10 +232,11 @@ main {
   display: flex;
   flex-direction: column;
   margin-block: 20px;
-  border: 1px solid red;
+  
 }
 .karta_opcja--title {
   margin-bottom: 20px;
+  text-align: center;
 }
 .swiper {
   width: 600px;
