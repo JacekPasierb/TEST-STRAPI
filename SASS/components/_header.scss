@@ -90,6 +90,7 @@ main {
 .offers__box--head {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 
@@ -113,7 +114,9 @@ main {
     margin-inline: auto;
   }
 }
-
+.offers {
+  padding-block: 20px;
+}
 
 .offer__card {
   width: 80%;
@@ -185,6 +188,7 @@ main {
   flex-direction: row;
   gap: 20px;
   justify-content: center;
+  padding-block: 20px;
 }
 //-------------------Ponizej do sprawdzenia kod ------------------------
 .kreska4 {
