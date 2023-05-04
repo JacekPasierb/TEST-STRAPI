@@ -4,7 +4,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
 }
 main {
@@ -54,13 +54,13 @@ main {
     url(/images/womanIdea.jpg);
   background-size: cover;
   background-position: center center;
-  position: relative;
+  padding-block: 110px;
+  padding-inline: 20px;
 }
 .head {
-  padding-block: 118px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   &__tittle {
     font-size: 26px;
     font-weight: 900;
@@ -70,10 +70,6 @@ main {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     display: flex;
-    margin-bottom: 30px;
-    position: absolute;
-    top: 40px;
-    left: 40px;
   }
   &__button {
     border: none;
@@ -82,37 +78,21 @@ main {
     // background-color: aqua; 4BDBFE
     background-color: #4bdbfe;
     padding: 10px 41px 10px 41px;
-
-    position: absolute;
-    top: 174px;
-    left: 40px;
-    z-index: 3;
+    margin-top: 50px;
   }
 }
 
-.oferty__cards {
-  display: flex;
-  justify-content: space-around;
-  gap: 15px;
-  flex-wrap: wrap;
-}
 .container {
   padding: 0 15px;
   margin: 0 auto;
   max-width: 100%;
 }
-.head__ofert {
+.offers__box--head {
   display: flex;
   justify-content: center;
 }
-.usługi {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.oferty {
-  padding-block: 10px;
-}
+
+
 .card {
   display: flex;
   justify-content: center;
@@ -133,85 +113,80 @@ main {
     margin-inline: auto;
   }
 }
-.Zastosowanie_list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-//---------------------------------
-.kreska {
-  width: 200px;
-  height: 100%;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  padding: 40px;
-  // position: relative;
 
-  border: 1px solid red;
-}
-.kreska2 {
-  width: 100px;
-  height: 100px;
-  border:1px solid black;
-  // position: absolute;
-  // top: 20px;
-  // left: 20px;
-}
-.karty {
-  justify-content: center;
-}
-.karta {
+
+.offer__card {
   width: 80%;
   display: flex;
   gap: 50px;
   // border: 1px solid green;
 
   position: relative;
- 
+
   justify-content: center;
   margin: auto;
-}
-.kreska3 {
-  width: 180px;
-  height: 180px;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
- 
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  &--left {
+    width: 180px;
+    height: 180px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &--leftTwo {
+    width: 80%;
+    height: 80%;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+  }
+  &--center {
+    display: flex;
+    flex-direction: column;
+    margin-block: 20px;
+  }
+  &--title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &--offerList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &--right {
+    width: 180px;
+    height: 180px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &--rightTwo {
+    width: 60%;
+    height: 60%;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
 
-
-  
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
 }
-.kreska5pi {
-  width: 60%;
-  height: 60%;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-  
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-
-}
-.kreska3pi {
-  width: 180px;
-  height: 180px;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  padding: 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.kreska5 {
+.swiper {
   width: 80%;
-  height: 80%;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
+  height: 300px;
 }
+.location {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+//-------------------Ponizej do sprawdzenia kod ------------------------
 .kreska4 {
   width: 100px;
   height: 100px;
@@ -228,20 +203,27 @@ main {
     height: 100%;
   }
 }
-.karta_opcja {
-  display: flex;
-  flex-direction: column;
-  margin-block: 20px;
-  
+
+
+
+.kreska {
+  width: 200px;
+  height: 100%;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  padding: 40px;
+  // position: relative;
+
+  border: 1px solid red;
 }
-.karta_opcja--title {
-  margin-bottom: 20px;
-  text-align: center;
+.kreska2 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  // position: absolute;
+  // top: 20px;
+  // left: 20px;
 }
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-.swiper {
-  width: 80%;
+.karty {
+  justify-content: center;
 }
