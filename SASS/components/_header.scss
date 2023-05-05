@@ -26,6 +26,40 @@ main {
     padding-block: 10px;
   }
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__background {
+    background-color: #00b4d8;
+    padding-block: 10px;
+  }
+  &__underline {
+    width: 90vw;
+    border: 1px solid black;
+    margin-block: 20px;
+  }
+  &__box {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__boxItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__head {
+    margin-bottom: 20px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .navigation {
   display: flex;
   justify-content: space-around;
@@ -87,12 +121,14 @@ main {
   margin: 0 auto;
   max-width: 100%;
 }
-.offers__box--head {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+.offers {
+  padding-block: 20px;
+  &__box--head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
-
 
 .card {
   display: flex;
@@ -113,9 +149,6 @@ main {
     border-radius: 50%;
     margin-inline: auto;
   }
-}
-.offers {
-  padding-block: 20px;
 }
 
 .offer__card {
@@ -189,6 +222,24 @@ main {
   gap: 20px;
   justify-content: center;
   padding-block: 20px;
+  &__info {
+    text-align: center;
+  }
+  &__headText {
+    margin-block: 20px;
+  }
+  &__text {
+    display: flex;
+    justify-content: center;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+  }
+  &__map--style {
+    border: 1px solid #00b4d8;
+    border-radius: 50%;
+  }
 }
 //-------------------Ponizej do sprawdzenia kod ------------------------
 .kreska4 {
@@ -207,8 +258,6 @@ main {
     height: 100%;
   }
 }
-
-
 
 .kreska {
   width: 200px;

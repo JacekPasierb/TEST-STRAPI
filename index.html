@@ -217,20 +217,82 @@
       <section class="location container">
         <div class="location__info">
           <h2 class="offers__box--head">Gdzie nas szukać ?</h2>
-          <p>Perfect Beauty & Body to nowoczesny salon modelowania sylwetki i laseroterapii.</p>
-          <h4>Adres:</h4>
-          <p>21-010 Łęcznagit</p>
-           <h4>Telefon:</h4>
-          <p>+48 000 000 000</p>
-           <h4>Email:</h4>
-          <p>example@gmail.com</p>
+          <p>
+            Perfect Beauty & Body to nowoczesny salon modelowania sylwetki i
+            laseroterapii.
+          </p>
+          <h4 class="location__headText">Adres:</h4>
+          <div class="location__text">
+            <svg class="location__icon">
+              <use
+                href="./images/symbol-defs.svg#icon-location"
+                width="15"
+                height="15"
+              ></use>
+            </svg>
+            <p>21-010 Łęczna</p>
+          </div>
+          <h4 class="location__headText">Telefon:</h4>
+          <div class="location__text">
+            <svg class="location__icon">
+              <use
+                href="./images/symbol-defs.svg#icon-mobile"
+                width="15"
+                height="15"
+              ></use>
+            </svg>
+            <p>+48 000 000 000</p>
+          </div>
+          <h4 class="location__headText">Email:</h4>
+          <div class="location__text">
+            <svg class="location__icon">
+              <use
+                href="./images/symbol-defs.svg#icon-mail2"
+                width="15"
+                height="15"
+              ></use>
+            </svg>
+            <p>example@gmail.com</p>
+          </div>
         </div>
         <div class="location__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2494.65645258935!2d22.883410669893127!3d51.29904595784565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2sus!4v1683218266933!5m2!1spl!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            class="location__map--style"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2494.65645258935!2d22.883410669893127!3d51.29904595784565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2sus!4v1683218266933!5m2!1spl!2sus"
+            width="600"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer__background">
+        <div class="footer container">
+          <div class="footer__box">
+            <div class="footer__boxItem">
+              <h4 class="footer__head">Perfect Beauty & Body</h4>
+              <div class="footer__info">
+              <p>ul. Sezamkowa 2B</p>
+              <p>21-010 Łęczna</p>
+              </div>
+            </div>
+            <div class="footer__boxItem">
+              <h4 class="footer__head">Zapraszamy</h4>
+              <div class="footer__info">
+              <p>Pn - Pt: 8:00 - 17:00</p>
+              <p>Sobota: 8:00 - 13:00</p>
+              <p>Niedziela: Zamknięte</p></div>
+            </div>
+            <div class="footer__boxItem"><h4 class="footer__head">Social Media</h4><div class="footer__info"><p></p></div></div>
+          </div>
+          <div class="footer__underline"></div>
+          <p>Wszystkie prawa zastrzezone</p>
+        </div>
+      </div>
+    </footer>
     <!-- skrypty dla bibilioteki slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
