@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Beauty Oferta</title>
+    <!-- biblioteka Slider style -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- biblioteka Slider style -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!------------------------------------------------------>
+    <!------------------------ MENU ------------------------>
+    <!------------------------------------------------------>
+    <header>
+      <div class="menu__background">
+        <div class="menu container">
+          <div class="menu__logo">Perfect Beauty & Body</div>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="./index.html" class="navigation__link navigation__link--active"
+                  >Perfect & Beauty</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">O Nas</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Oferta Zabiegów</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Cennik Zabiegów</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Innowacyjne Urządzenia</a>
+              </li>
+              <li class="navigation__item">
+                <p class="navigation__link">Kontakt: (+48) 000 000 000</p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!------------------------------------------------------>
+    <!------------------------ STRONA ---------------------->
+    <!------------------------------------------------------>
+
+    <main>
+      <section class="background">
+        <div class="head container">
+          <p class="head__tittle">Luksusowe zabiegi</p>
+          <p class="head__tittle">kosmetyczne</p>
+          <p class="head__tittle">w Twoim Zasięgu !</p>
+          <button class="head__button">Nowość w Łęcznej</button>
+        </div>
+      </section>
+      
+    </main>
+    <footer>
+      <div class="footer__background">
+        <div class="footer container">
+          <div class="footer__box">
+            <div class="footer__boxItem">
+              <h4>"Pokręcona"</h4>
+              <h4 class="footer__head">Perfect Beauty & Body</h4>
+              <div class="footer__info">
+                <p>ul. Sezamkowa 2B</p>
+                <p>21-010 Łęczna</p>
+              </div>
+            </div>
+            <div class="footer__boxItem">
+              <h4 class="footer__head">Zapraszamy</h4>
+              <div class="footer__info">
+                <p>Pn - Pt: 8:00 - 17:00</p>
+                <p>Sobota: 8:00 - 13:00</p>
+                <p>Niedziela: Zamknięte</p>
+              </div>
+            </div>
+            <div class="footer__boxItem">
+              <h4 class="footer__head">Social Media</h4>
+              <div class="footer__info">
+                <p>
+                  <a href="https://www.instagram.com/pokrecona_stylistka/"
+                    ><svg class="footer__icon">
+                      <use
+                        href="./images/symbol-defs.svg#icon-instagram"
+                      ></use></svg
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__underline"></div>
+          <p>
+            © "Pokręcona" Perfect Beauty & Body Sp. z o. o. 2023 Wszelkie prawa
+            zastrzeżone.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- skrypty dla bibilioteki slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+    <!-- skrypty dla bibilioteki slider -->
+  </body>
+</html>

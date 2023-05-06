@@ -54,16 +54,16 @@ main {
   &__head {
     margin-bottom: 20px;
   }
- 
+
   &__info {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
   &__icon {
-     width: 45px;
+    width: 45px;
     height: 45px;
-    fill: #B22FB2;
+    fill: #b22fb2;
     &:hover {
       cursor: pointer;
     }
@@ -97,6 +97,7 @@ main {
     url(/images/womanIdea.jpg);
   background-size: cover;
   background-position: center center;
+//  background-attachment: fixed;
   padding-block: 110px;
   padding-inline: 20px;
 }
@@ -131,11 +132,22 @@ main {
   max-width: 100%;
 }
 .offers {
+  background-repeat: no-repeat;
   padding-block: 20px;
+  background-image: linear-gradient(
+      rgba(196, 192, 192, 0.7),
+      rgba(187, 185, 185, 0.7),
+    ),
+    url(/images/womanRelax.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
   &__box--head {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
     margin-bottom: 50px;
+    color: black;
   }
 }
 
@@ -172,12 +184,11 @@ main {
   justify-content: center;
   margin: auto;
   &--left {
-    width: 180px;
-    height: 180px;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    padding: 30px;
+    width: 20%;
+    height: 100%;
+   
     
+    padding: 30px;
   }
   &--leftTwo {
     width: 80%;
@@ -193,6 +204,7 @@ main {
   &--title {
     margin-bottom: 20px;
     text-align: center;
+    color: black;
   }
   &--offerList {
     display: flex;
@@ -200,11 +212,9 @@ main {
     gap: 15px;
   }
   &--right {
-    width: 180px;
-    height: 180px;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-
+    width: 20%;
+    height: 100%;
+    
     
   }
   &--rightTwo {
@@ -287,4 +297,8 @@ main {
 }
 .karty {
   justify-content: center;
+}
+.test {
+  width: 100%;
+  height: 100%;
 }
