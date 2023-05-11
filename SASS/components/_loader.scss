@@ -9,6 +9,7 @@
   height: 100vh;
   background-color: #fff; /* kolor tła loadera, możesz dostosować do swojego projektu */
   z-index: 4; /* ustawia loader na najwyższym poziomie, aby zakryć pozostałą zawartość strony */
+  flex-direction: column;
 }
 
 @keyframes spin {
