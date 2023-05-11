@@ -1,0 +1,27 @@
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff; /* kolor tła loadera, możesz dostosować do swojego projektu */
+  z-index: 4; /* ustawia loader na najwyższym poziomie, aby zakryć pozostałą zawartość strony */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loader img {
+  width: 100px; /* dostosuj szerokość loga do swoich potrzeb */
+  height: auto;
+  animation: spin 2s linear infinite;
+}
