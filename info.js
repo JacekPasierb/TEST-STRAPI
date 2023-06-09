@@ -8,9 +8,10 @@ fetchData = () => {
           data.data.forEach((item) => {
               
             const article = document.createElement("article");
-            article.innerHTML = `<li>
-          <h2>${item.attributes.Name}</h2>
-          <p>${item.attributes.Description}</p></li>
+            article.classList.add("article");
+            article.innerHTML = `
+          <h3 class='infoTitle'>${item.attributes.Name}</h3>
+          <p>${item.attributes.Description}</p>
         `;
             dataContainer.appendChild(article);
           });
