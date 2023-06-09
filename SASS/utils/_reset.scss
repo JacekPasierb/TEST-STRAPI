@@ -1,11 +1,8 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #212121;
-  
-
- 
 }
-  // rgb(64,217,254)
+// rgb(64,217,254)
 
 h1,
 h2,
@@ -37,14 +34,11 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    
     color: #ffffff;
     cursor: pointer;
-    
   }
 }
 
 ul:not(.adress) {
   list-style: none;
-  display: flex;
 }
